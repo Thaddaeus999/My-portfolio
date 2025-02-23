@@ -1,0 +1,505 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>TGS Programming portfolio </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<button id="toggle-sidebar">☰</button>
+						<style>
+							#/* Sidebar Styling */
+						#sidebar {
+							position: fixed;
+							left: 0;
+							top: 0;
+							width: 250px; /* Adjust as needed */
+							height: 100%;
+							background-color: #2f4b7c;
+							color: white;
+							padding: 20px;
+							transition: transform 0.3s ease-in-out;
+						}
+
+						/* Hidden Sidebar */
+						#sidebar.hidden {
+							transform: translateX(-100%);
+						}
+
+						/* Main Content */
+						#wrapper {
+							margin-left: 250px; /* Same as the sidebar width */
+							transition: margin-left 0.3s ease-in-out;
+						}
+
+						/* When Sidebar is Hidden */
+						.sidebar-hidden #wrapper {
+							margin-left: 0;
+						}
+
+						/* Toggle Button */
+						#toggle-sidebar {
+							position: fixed;
+							top: 10px;
+							left: 10px;
+							background-color: #00b8a9;
+							color: white;
+							border: none;
+							padding: 10px 15px;
+							font-size: 16px;
+							cursor: pointer;
+							z-index: 1000;
+							border-radius: 5px;
+						}
+
+						#toggle-sidebar:hover {
+							background-color: #f6d55c;
+							color: black;
+						}
+
+						</style>
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#wia">About</a></li>
+							<li><a href="#project">Project portfolio</a></li>
+							<li><a href="#git">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<style>
+				#sidebar {
+					position: fixed;
+					left: 0;
+					top: 0;
+					width: 250px;
+					height: 100%;
+					background-color: #2f4b7c;
+					color: white;
+					padding: 20px;
+					transition: transform 0.3s ease-in-out;
+				}
+				#sidebar.hidden {
+					transform: translateX(-100%);
+				}
+				#sidebar nav ul li a {
+					color: white;
+				}
+				
+				#sidebar nav ul li a:hover {
+					color: #4a4a4a	; /* Yellow Hover Effect */
+				}¨
+
+				.sidebar-hidden #wrapper {
+					margin-left: 0;}
+
+				#toggle-sidebar {
+					position: fixed;
+					top: 10px;
+					left: 10px;
+					background-color: #00b8a9;
+					color: white;
+					border: none;
+					padding: 10px 15px;
+					font-size: 16px;
+					cursor: pointer;
+					z-index: 1000;
+					border-radius: 5px;
+				}
+
+				#toggle-sidebar:hover {
+					background-color: #f6d55c;
+					color: black;
+				}
+
+				
+				/* Main Sections */
+				#wrapper {
+					background-color: #003f5c; /* Dark Blue Background */
+					margin-left: 250px;
+					transition: margin-left 0.3s ease-in-out;
+				}
+				
+				
+			
+				
+				#project {
+					background-color: #2f4b7c; /* Dark Blue */
+				}
+				
+				#git {
+					background-color: #4a4a4a	; /* Yellow */
+					color: #003f5c; /* Dark text for contrast */
+				}
+			</style>	
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+				<section class="hero" id ="intro">
+					<div class="overlay"></div>
+					<h1 class="hero-title">Chasing the signal</h1>
+					<img src="./images/mountain_norway_picture.jpg" alt="Description of the image">
+
+				
+					<style>
+						*{
+						margin: 0;
+						padding: 0;
+						box-sizing: border-box;
+						}
+					
+						body {
+							font-family: "Copperplate", "Copperplate Gothic Light", "Arial", sans-serif;
+							background-color: #003f5c;
+							color:  #f6d55c;
+						}
+					
+						.hero {
+							position: relative;
+							width: 100%;
+							height: 100vh;
+							background: url("./images/mountain_norway_picture.jpg") no-repeat center center/cover;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+						}
+
+						.overlay {
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+						}
+
+						.hero-title {
+							position: absolute;
+							color:  #f6d55c;
+							font-size: 3rem;
+							font-weight: bold;
+							text-align: center;
+							z-index: 10; /* Ensures text appears above the overlay */
+						}
+					</style>
+				</section>
+				
+		<!-- Main -->
+		<div id="main">
+				<!-- two -->
+				<section id="wia" class="wrapper style2 spotlights">
+					<section>
+						<a href="#" class="image"><img src="/images/personal_picture.jpg" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>About:
+								<p> My name is Thomas Gjersøe Sogge. I am a Norwegian bachelor in Economics from IE University in Madrid, and a Masters in information systems from Kristiania University of Applied Sciences. </p>
+								<p>I am certfied Data Analyst from code Academy, and enthusiastic about using python, SQL and other software to make predictive models and data-driven insights.</p>
+								<p>Below I have highlighted some of the machine learning, dashboard and analysis projects I have generated. Additional personal info can be found on my linkedin. </p>
+																
+								<style>h2 {
+									font-size: 28px; /* Adjust as needed */
+									font-weight: bold;
+									color: #f6d55c; /* Soft yellow from your palette */
+									margin-bottom: 10px;
+								}
+								
+								p {
+									font-size: 18px; /* Smaller than h2 */
+									color: white;
+									line-height: 1.6; /* Improves readability */
+								}
+								</style>
+								<a href="https://www.linkedin.com/in/thomas-gjersoe-sogge-ekcutn4/" target="_blank" class="linkedin-button">
+									Connect on LinkedIn
+								</a>
+							</div>
+						</div>
+					</section>
+
+				</section>
+				<!-- one -->
+				<section id="project" class="wrapper style3 fade-up">
+					<div class="inner">
+						<h2>Project portfolio:</h2>
+					
+
+						<div class="features">
+							<!-- alzheimers -->
+							<section>
+								<span class="icon solid major fa-network-wired"></span>
+								<h3><a href="https://github.com/Thaddaeus999/Alzheimer-s-Dataset-logistic-regression">Alzheimers prediction model - logistic regression(Python)</a></h3>
+								<img src="images/alz.png">
+							</section>
+
+							<style>
+								.image-container {
+									width: 100%;
+									max-width: 600px;
+									height: 300px; /* Or set a fixed height like 300px */
+									display: flex;
+									justify-content: center;
+									align-items: center;
+								}
+							
+								img {
+									width: 100%; /* Image will scale within the container */
+									height: auto;
+									object-fit: contain;
+								}
+							</style>
+							<!-- student mental health -->
+							<section>
+								<span class="icon solid major fa-code"></span>
+								<h3><a href="https://github.com/Thaddaeus999/Analyzing-Student-Mental-health-project">Student mental health prediction (Python)</a></h3>
+	
+								<img src="images/StudentMental.jpg">
+							</section>
+
+							<style>
+								.image-container {
+									width: 100%;
+									max-width: 600px;
+									height: 300px; /* Or set a fixed height like 300px */
+									display: flex;
+									justify-content: center;
+									align-items: center;
+								}
+							
+								img {
+									width: 100%; /* Image will scale within the container */
+									height: auto;
+									object-fit: contain;
+								}
+							</style>
+							<!-- superstore -->
+							<section>
+								<span class="icon solid major fa-chart-line"></span>
+								<h3><a href="https://github.com/Thaddaeus999/Alzheimer-s-Dataset-logistic-regression">Superstore - retail data visualization (Power BI)</a></h3>
+								
+								<img src="images/hardware superstore.jpg">
+							</section>
+
+							<style>
+								.image-container {
+									width: 100%;
+									max-width: 600px;
+									height: 300px; /* Or set a fixed height like 300px */
+									display: flex;
+									justify-content: center;
+									align-items: center;
+								}
+							
+								img {
+									width: 100%; /* Image will scale within the container */
+									height: auto;
+									object-fit: contain;
+								}
+							</style>
+
+							<!-- suits database -->
+							<section>
+								<span class="icon solid major fa-robot"></span>
+								<h3><a href="https://github.com/Thaddaeus999/SQL_Suits_operationalDatabase">Suits cases database (SQL)</a></h3>
+								
+								<img src="images/SUITS.jpg">
+							</section>
+
+							<style>
+								.image-container {
+									width: 100%;
+									max-width: 1000px;
+									height: 300px; /* Or set a fixed height like 300px */
+									display: flex;
+									justify-content: center;
+									align-items: center;
+								}
+							
+								img {
+									width: 100%; /* Image will scale within the container */
+									height: auto;
+									object-fit: contain;
+									
+							</style>
+							<div class="button-container">
+							<a href="https://github.com/Thaddaeus999" target="_blank" class="github-button">
+								<i class="fab fa-github"></i> Complete Project Portfolio on GitHub
+							</a>
+							</div>
+							
+							<style>
+							.github-button {
+								display: inline-block;
+								padding: 12px 24px;
+								font-size: 18px;
+								font-weight: bold;
+								text-decoration: none;
+								color: white;
+								background-color: #24292e; /* GitHub Black */
+								border-radius: 8px;
+								transition: background 0.3s ease, transform 0.2s ease;
+								box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+							}
+
+							.github-button:hover {
+								background-color: #0366d6; /* GitHub Blue */
+								transform: scale(1.05);
+							}
+
+							/* Optional: Add space if button is inside a section */
+							.github-button-container {
+								text-align: center;
+								margin-top: 20px;
+							}
+							.button-container {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								text-align: center;
+								margin-top: 20px; /* Adjust as needed */
+							}
+
+							.github-button {
+								display: inline-block;
+								padding: 12px 24px;
+								font-size: 18px;
+								font-weight: bold;
+								text-decoration: none;
+								color: white;
+								background-color: #24292e; /* GitHub Black */
+								border-radius: 8px;
+								transition: background 0.3s ease, transform 0.2s ease;
+								box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+							}
+
+							.github-button:hover {
+								background-color: #0366d6; /* GitHub Blue */
+								transform: scale(1.05);
+							}
+						</style>
+						</div>
+						
+					</div>
+				</section>
+				<!-- Three -->
+					<section id="git" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Feel free to contact email or phone. Alternatively fill out the form below.</p>
+							<div class="split style1">
+								<section>
+									<form action="https://formspree.io/f/mpwqepbn" method="POST">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>Stasjonsveien 60<br />
+												0771 Oslo<br />
+											Norway</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">tgsogge@outlook.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>+47 48446896</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://github.com/Thaddaeus999" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.instagram.com/t.g_sogge/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="https://www.linkedin.com/in/thomas-gjersoe-sogge-ekcutn4/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+
+											<style>
+												
+												body {
+												font-family: "Copperplate", "Copperplate Gothic Light", "Arial", sans-serif;
+												color: white;
+												}
+											</style>
+											
+										</li>
+									</ul>
+									<style>
+										
+										body {
+										font-family: "Copperplate", "Copperplate Gothic Light", "Arial", sans-serif;
+										color: white;
+											}
+									</style>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Sogge Holding. All rights reserved.</li><li>We out here</a></li> <li>If you add one, you take one</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const toggleButton = document.getElementById("toggle-sidebar");
+					const sidebar = document.getElementById("sidebar");
+					const wrapper = document.getElementById("wrapper");
+				
+					toggleButton.addEventListener("click", function () {
+						sidebar.classList.toggle("hidden");
+						document.body.classList.toggle("sidebar-hidden");
+					});
+				});
+				</script>
+				
+				
+	</body>
+</html>
